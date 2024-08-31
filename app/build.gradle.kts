@@ -80,7 +80,7 @@ dependencies {
     implementation("androidx.navigation:navigation-ui:$navVersion")
 
     //Curved Bottom Navigation
-    implementation ("com.github.badoualy:curvedbottomnavigation:1.0.0")
+    implementation ("com.github.qamarelsafadi:CurvedBottomNavigation:0.1.1")
 
     val pagingVersion = "3.3.0" // Use the latest version
 

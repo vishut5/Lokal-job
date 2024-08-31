@@ -1,16 +1,18 @@
 package com.vishu.jobsapp.View
 
+import android.app.ProgressDialog.show
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
+import androidx.core.view.OneShotPreDrawListener.add
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import com.vishu.jobsapp.R
 import com.vishu.jobsapp.databinding.ActivityMainBinding
-import com.badoualy.curvedbottomnaviagtion.CurvedBottomNavigation
+import com.qamar.curvedbottomnaviagtion.CurvedBottomNavigation
 import dagger.hilt.android.AndroidEntryPoint
 
 
@@ -40,8 +42,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     companion object {
-        // you can put any unique id here, but because I am using Navigation Component I prefer to put it as
-        // the fragment id.
+
         val JOBS_ITEM = R.id.jobsFragment
         val SAVED_ITEM = R.id.savedJobsFragment
     }
