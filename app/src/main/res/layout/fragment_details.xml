@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.DetailsFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tv_company_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Company Name: "
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textColor="#03172E"
+                android:textStyle="bold"
+                android:paddingBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_job_role"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Job Role: "
+                android:textAppearance="?attr/textAppearanceSubtitle1"
+                android:textColor="#03172E"
+                android:paddingBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Place: "
+                android:textAppearance="?attr/textAppearanceSubtitle2"
+                android:textColor="#6C7FE7"
+                android:paddingBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/tv_salary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Salary: "
+                android:textAppearance="?attr/textAppearanceSubtitle2"
+                android:textColor="#6C7FE7"
+                android:paddingBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/tv_job_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Job Type: "
+                android:textAppearance="?attr/textAppearanceSubtitle2"
+                android:textColor="#6C7FE7"
+                android:paddingBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/tv_experience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Experience: "
+                android:textAppearance="?attr/textAppearanceSubtitle2"
+                android:textColor="#6C7FE7"
+                android:paddingBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/tv_qualification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Qualification: "
+                android:textAppearance="?attr/textAppearanceSubtitle2"
+                android:textColor="#6C7FE7"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
