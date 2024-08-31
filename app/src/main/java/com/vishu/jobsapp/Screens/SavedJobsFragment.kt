@@ -1,7 +1,6 @@
-package com.vishu.jobsapp.View
+package com.vishu.jobsapp.Screens
 
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -10,11 +9,8 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.vishu.jobsapp.Models.JobDetails
 import com.vishu.jobsapp.Models.JobsEntity
-import com.vishu.jobsapp.Paging.JobsPagingAdapter
 import com.vishu.jobsapp.R
-import com.vishu.jobsapp.Utils.Constants.TAG
 import com.vishu.jobsapp.ViewModels.JobsViewModel
 import com.vishu.jobsapp.databinding.FragmentSavedJobsBinding
 import com.google.gson.Gson

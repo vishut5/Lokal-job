@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/jobsFragment"
-        android:name="com.vishu.jobsapp.View.JobsFragment"
+        android:name="com.vishu.jobsapp.Screens.WorkFragment"
         android:label="fragment_jobs"
         tools:layout="@layout/fragment_jobs" >
         <action
@@ -16,12 +16,12 @@
     </fragment>
     <fragment
         android:id="@+id/detailsFragment"
-        android:name="com.vishu.jobsapp.View.DetailsFragment"
+        android:name="com.vishu.jobsapp.Screens.DetailsFragment"
         android:label="fragment_details"
         tools:layout="@layout/fragment_details" />
     <fragment
         android:id="@+id/savedJobsFragment"
-        android:name="com.vishu.jobsapp.View.SavedJobsFragment"
+        android:name="com.vishu.jobsapp.Screens.SavedJobsFragment"
         android:label="fragment_saved_jobs"
         tools:layout="@layout/fragment_saved_jobs" >
         <action

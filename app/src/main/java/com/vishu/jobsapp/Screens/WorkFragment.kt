@@ -1,6 +1,5 @@
-package com.vishu.jobsapp.View
+package com.vishu.jobsapp.Screens
 
-import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -11,7 +10,6 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.vishu.jobsapp.Models.JobDetails
-import com.vishu.jobsapp.Models.PrimaryDetails
 import com.vishu.jobsapp.Paging.JobsPagingAdapter
 import com.vishu.jobsapp.R
 import com.vishu.jobsapp.Utils.Constants.TAG
@@ -21,7 +19,7 @@ import com.google.gson.Gson
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class JobsFragment : Fragment() {
+class WorkFragment : Fragment() {
 
     private var _binding : FragmentJobsBinding? = null
     private val binding get() = _binding!!

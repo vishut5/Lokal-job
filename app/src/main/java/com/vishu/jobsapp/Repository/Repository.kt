@@ -9,7 +9,7 @@ import com.vishu.jobsapp.api.ApiService
 import com.vishu.jobsapp.database.JobsDao
 import javax.inject.Inject
 
-class JobsRepositoryImpl @Inject constructor(private val apiService: ApiService, private val jobsDao: JobsDao) {
+class Repository @Inject constructor(private val apiService: ApiService, private val jobsDao: JobsDao) {
     fun getAllJobs() = Pager(
         config = PagingConfig(pageSize = 10, maxSize = 100),
         pagingSourceFactory = { JobsPagingSource(apiService) }

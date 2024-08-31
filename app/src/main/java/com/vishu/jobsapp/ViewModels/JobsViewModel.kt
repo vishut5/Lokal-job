@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.vishu.jobsapp.Repository.JobsRepositoryImpl
+import com.vishu.jobsapp.Repository.Repository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import androidx.paging.cachedIn
 import com.vishu.jobsapp.Models.JobsEntity
@@ -13,7 +13,7 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class JobsViewModel @Inject constructor(private val repository: JobsRepositoryImpl) : ViewModel() {
+class JobsViewModel @Inject constructor(private val repository: Repository) : ViewModel() {
 
     val list = repository.getAllJobs().cachedIn(viewModelScope)
 

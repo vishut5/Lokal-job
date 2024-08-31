@@ -1,14 +1,11 @@
-package com.vishu.jobsapp.View
+package com.vishu.jobsapp.Screens
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.vishu.jobsapp.Models.JobDetails
 import com.vishu.jobsapp.Models.JobsEntity
-import com.vishu.jobsapp.databinding.JobItemBinding
 import com.vishu.jobsapp.databinding.OfflineJobItemBinding
 
 class OfflineItemAdapter(private val onClick : (JobsEntity) -> Unit) : ListAdapter<JobsEntity, OfflineItemAdapter.ListViewHolder>(ComparatorDiffUtil()) {

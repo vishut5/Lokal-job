@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".View.JobsFragment">
+    tools:context=".Screens.WorkFragment">
 
 
     <androidx.recyclerview.widget.RecyclerView
@@ -12,8 +12,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="10dp"
+        android:layout_marginStart="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:listitem="@layout/job_item"/>
+        app:layout_constraintVertical_bias="1.0"
+        tools:listitem="@layout/job_item" />
 </androidx.constraintlayout.widget.ConstraintLayout>

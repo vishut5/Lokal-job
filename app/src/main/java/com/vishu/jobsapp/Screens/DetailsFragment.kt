@@ -1,16 +1,12 @@
-package com.vishu.jobsapp.View
+package com.vishu.jobsapp.Screens
 
-import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.text.HtmlCompat
 import com.vishu.jobsapp.Models.JobDetails
 import com.vishu.jobsapp.Models.JobsEntity
-import com.vishu.jobsapp.Models.PrimaryDetails
 import com.vishu.jobsapp.databinding.FragmentDetailsBinding
 import com.google.android.material.snackbar.Snackbar
 import com.google.gson.Gson
