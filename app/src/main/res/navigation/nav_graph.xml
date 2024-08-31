@@ -21,7 +21,7 @@
         tools:layout="@layout/fragment_details" />
     <fragment
         android:id="@+id/savedJobsFragment"
-        android:name="com.vishu.jobsapp.View.JobsFragment"
+        android:name="com.vishu.jobsapp.View.SavedJobsFragment"
         android:label="fragment_saved_jobs"
         tools:layout="@layout/fragment_saved_jobs" >
         <action
