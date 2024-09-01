@@ -56,7 +56,7 @@ class JobsPagingAdapter(private val onClick : (JobDetails) -> Unit, private val 
 
     class ComparatorDiffUtil : DiffUtil.ItemCallback<JobDetails>() {
         override fun areItemsTheSame(oldItem: JobDetails, newItem: JobDetails): Boolean {
-            return oldItem == newItem
+            return oldItem.id == newItem.id
         }
 
         override fun areContentsTheSame(oldItem: JobDetails, newItem: JobDetails): Boolean {
